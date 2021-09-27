@@ -18,7 +18,7 @@ def changeRes(width, height):
 
 
 # Reading Image
-img = cv.imread('Resources/Photos/cat4.jpg')
+img = cv.imread('../Resources/Photos/cat4.jpg')
 resized_image = rescaleFrame(img, scale=.2)
 cv.imshow('Cats', img)
 cv.imshow('Cats_resized', resized_image)
@@ -26,7 +26,7 @@ cv.imshow('Cats_resized', resized_image)
 cv.waitKey(0)
 
 # Reading Videos
-capture = cv.VideoCapture('Resources/Videos/cat1.mp4')
+capture = cv.VideoCapture('../Resources/Videos/cat1.mp4')
 
 while True:
     isTrue, frame = capture.read()
